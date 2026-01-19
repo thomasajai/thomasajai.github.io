@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Resume</title>
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --border: #e5e7eb;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 900px;
+        padding: 2.5rem 1.5rem;
+        margin: auto;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border-bottom: 2px solid var(--border);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      header p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      header a {
+        color: var(--accent);
+        text-decoration: none;
+        margin-right: 0.75rem;
+      }
+
+      section {
+        margin-bottom: 2.5rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .skill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+
+      .skill-label {
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .skill-items {
+        color: var(--text);
+      }
+
+      /* Mobile spacing */
+      @media (max-width: 640px) {
+        .skill-row {
+          flex-direction: column;
+          gap: 0.2rem;
+        }
+      }
+
+      .project-group {
+        margin-bottom: 2rem;
+      }
+
+      .project-org {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-item {
+        margin-left: 0;
+        margin-bottom: 1.25rem;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .project-header h3 {
+        margin: 0;
+        font-size: 1.05rem;
+      }
+
+      .project-tech {
+        font-size: 0.9rem;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .project-item ul {
+        margin-top: 0.5rem;
+      }
+
+      /* Mobile adjustments */
+      @media (max-width: 640px) {
+        .project-tech {
+          white-space: normal;
+        }
+      }
+
+      .edu-item {
+        margin-bottom: 1.75rem;
+      }
+
+      .edu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .edu-header h3 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .edu-degree {
+        margin: 0.2rem 0 0;
+        color: var(--muted);
+      }
+
+      .edu-meta {
+        text-align: right;
+        font-size: 0.95rem;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .edu-meta span {
+        display: block;
+      }
+
+      .edu-courses {
+        margin: 0.5rem 0 0;
+        font-size: 0.95rem;
+      }
+
+      /* Mobile-friendly stacking */
+      @media (max-width: 640px) {
+        .edu-header {
+          flex-direction: column;
+        }
+
+        .edu-meta {
+          text-align: left;
+        }
+      }
+
+      .item {
+        margin-bottom: 1.25rem;
+      }
+
+      .item h3 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .item span {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      ul {
+        margin: 0.5rem 0 0 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.4rem;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .skill {
+        background: #f3f4f6;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-top: 3rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --text: #e5e7eb;
+          --muted: #94a3b8;
+          --border: #1e293b;
+          --accent: #60a5fa;
+        }
+
+        .skill {
+          background: #020617;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Thomas Ajai</h1>
+        <p>
+          CS @ Columbia University · New York City, New York<br />
+          <a href="mailto:tl3444@columbia.edu">tl3444@columbia.edu</a>
+          <a href="https://github.com/thomasajai">GitHub</a>
+          <a href="https://linkedin.com/in/thomas-ajai">LinkedIn</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="edu-item">
+          <div class="edu-header">
+            <div>
+              <h3>Columbia University</h3>
+              <p class="edu-degree">
+                M.S. in Computer Science · <strong>GPA:</strong> 3.92 / 4.00
+              </p>
+            </div>
+            <div class="edu-meta">
+              <span>New York, NY</span>
+              <span>Aug 2025 – Dec 2026</span>
+            </div>
+          </div>
+          <p class="edu-courses">
+            <strong>Courses:</strong> Natural Language Processing, Analysis of
+            Algorithms, ML for Functional Genomics, Distributed Systems
+          </p>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-header">
+            <div>
+              <h3>College of Engineering Trivandrum</h3>
+              <p class="edu-degree">
+                B.Tech in Computer Science and Engineering ·
+                <strong>GPA:</strong> 9.52 / 10.00
+              </p>
+            </div>
+            <div class="edu-meta">
+              <span>Trivandrum, IN</span>
+              <span>Aug 2019 – Jun 2023</span>
+            </div>
+          </div>
+          <p class="edu-courses">
+            <strong>Courses:</strong> Algorithm Analysis and Design,
+            Computational Theory, Database Systems
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="item">
+          <h3>Data Engineer — Providence India</h3>
+          <span>Jul 2023 – Jul 2025</span>
+          <ul>
+            <li>
+              Built and maintained end-to-end ETL pipelines using Alteryx and
+              Azure Data Factory, integrating data from Epic, Cerner, and Athena
+              EHR systems (53M+ records)
+            </li>
+            <li>
+              Migrated data workflows to Snowflake, reducing ETL runtime by 80%
+              and improving data reliability for analytics teams
+            </li>
+            <li>
+              Developed Power BI dashboards tracking 25+ KPIs for clinical and
+              financial data
+            </li>
+            <li>
+              Collaborated with cross-functional teams to design data models and
+              automate data quality validation for production systems
+            </li>
+            <li>
+              Introduced Docker-based containerization for reproducible ETL
+              environments and easier deployment across systems
+            </li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>NLP Developer Intern — Jiffy.ai</h3>
+          <span>Oct 2020 – Jan 2021</span>
+          <ul>
+            <li>
+              Developed an NLP model (SpaCy, NER) to extract key clauses from
+              unstructured documents, enhancing efficiency by 30%
+            </li>
+            <li>
+              Designed and automated data preprocessing pipelines for 2,000+
+              legal and business documents
+            </li>
+            <li>
+              Communicated analytical insights to stakeholders, demonstrating
+              ability to translate ML model performance into business value
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="project-group">
+          <p class="project-org">Columbia University</p>
+
+          <div class="project-item">
+            <div class="project-header">
+              <h3>
+                Post-Training a Large Language Model for Mathematical Reasoning
+              </h3>
+              <span class="project-tech">
+                PyTorch · LLaMA · LoRA · REINFORCE
+              </span>
+            </div>
+
+            <ul>
+              <li>
+                Implemented and fine-tuned Meta LLaMA-3.2-1B on GSM8K using
+                supervised LoRA fine-tuning and REINFORCE, improving
+                grade-school math accuracy from ~3% to ~24%.
+              </li>
+              <li>
+                Designed robust evaluation pipelines for numeric answer
+                extraction, tolerance-based exact-match scoring, and automated
+                benchmarking.
+              </li>
+              <li>
+                Implemented custom training loops, reward functions, prompt
+                masking, and formatting-constrained generation using Hugging
+                Face Transformers and PyTorch.
+              </li>
+            </ul>
+          </div>
+          <div class="project-item">
+            <div class="project-header">
+              <h3>Ancient Egyptian → German Neural Machine Translation</h3>
+              <span class="project-tech"> Transformers · LoRA </span>
+            </div>
+
+            <ul>
+              <li>
+                Fine-tuned a Transformer-based model for Ancient Egyptian
+                transliteration → German translation using LoRA on
+                domain-specific corpora.
+              </li>
+              <li>
+                Extended tokenizer to support Gardiner sign codes and rare
+                transliteration symbols, improving lexical coverage and training
+                stability.
+              </li>
+              <li>
+                Achieved BLEU = 45.6 and chrF = 61.6 on held-out test sets;
+                conducted ablations on tokenizer design and adapter rank.
+              </li>
+              <li>
+                Constructed end-to-end data pipelines for transliteration
+                normalization, token alignment, and evaluation.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header">
+              <h3>
+                Neural Machine Translation with Transformers (French → English)
+              </h3>
+              <span class="project-tech"> PyTorch · Transformers </span>
+            </div>
+
+            <ul>
+              <li>
+                Implemented a decoder-only Transformer from scratch in PyTorch
+                with multi-head causal attention, residual connections, learned
+                positional embeddings, and GPT-style weight tying.
+              </li>
+              <li>
+                Trained and evaluated on Multi30k, implementing masked
+                cross-entropy loss, autoregressive decoding, and BLEU evaluation
+                via SacreBLEU.
+              </li>
+              <li>
+                Fine-tuned Helsinki-NLP OpusMT and benchmarked against the
+                custom Transformer baseline.
+              </li>
+            </ul>
+          </div>
+          <div class="project-item">
+            <div class="project-header">
+              <h3>Fault-Tolerant MapReduce Framework</h3>
+              <span class="project-tech"> Go · RPC · Distributed Systems </span>
+            </div>
+
+            <ul>
+              <li>
+                Implemented a distributed MapReduce system in Go with a
+                centralized master and parallel workers communicating via RPC.
+              </li>
+              <li>
+                Designed task scheduling and worker coordination to support
+                concurrent map/reduce execution and dynamic worker availability.
+              </li>
+              <li>
+                Added fault handling to reassign tasks from failed workers,
+                ensuring job completion under partial failures.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header">
+              <h3>Replicated Key-Value Store with Raft Consensus</h3>
+              <span class="project-tech"> Go · Distributed Consensus </span>
+            </div>
+
+            <ul>
+              <li>
+                Built a replicated key-value store using Raft to provide
+                linearizable Get/Put operations across multiple replicas.
+              </li>
+              <li>
+                Implemented leader election, log replication, and state machine
+                application to tolerate crashes and network partitions.
+              </li>
+              <li>
+                Integrated snapshotting and log compaction to bound log growth
+                and improve recovery performance.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+
+        <div class="skills-list">
+          <div class="skill-row">
+            <span class="skill-label">Languages / Tools:</span>
+            <span class="skill-items"> Python, Go, SQL, C++, JavaScript </span>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-label">Data Engineering:</span>
+            <span class="skill-items">
+              Alteryx, Azure Data Factory, Snowflake, Power BI, Pandas, NumPy
+            </span>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-label">Tools:</span>
+            <span class="skill-items">
+              Docker, GitHub, Linux, VS Code, Jupyter Notebooks
+            </span>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-label">Machine Learning:</span>
+            <span class="skill-items">
+              PyTorch, Transformers, LoRA, LLMs, NER, Prompt Engineering
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
