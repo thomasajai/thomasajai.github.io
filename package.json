@@ -1,0 +1,12 @@
+{
+  "name": "thomas-ajai-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Thomas Ajai's standalone local portfolio",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

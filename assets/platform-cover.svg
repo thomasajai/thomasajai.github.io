@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="290" viewBox="0 0 480 290">
+<defs><filter id="shadow" x="-50%" y="-40%" width="200%" height="200%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#3f7c77" flood-opacity=".12"/></filter></defs>
+<g fill="none" stroke="#aac9c1" stroke-width="1.5"><path d="M64 127h56l38 23m-38 83 38-23m164-60 38-23h56m-94 83 38 23h56"/><circle cx="64" cy="127" r="5"/><circle cx="416" cy="127" r="5"/><circle cx="120" cy="233" r="5"/><circle cx="416" cy="233" r="5"/></g>
+<g filter="url(#shadow)" stroke-linejoin="round"><path d="m240 117 119 61-119 61-119-61z" fill="#c9e0d7" stroke="#92bfb1"/><path d="m240 88 119 61-119 61-119-61z" fill="#e4f0e8" stroke="#92bfb1"/><path d="m240 59 119 61-119 61-119-61z" fill="#fff" stroke="#92bfb1"/></g>
+<g fill="none" stroke="#4d8c7b" stroke-width="2" stroke-linejoin="round"><path d="m240 87 34 18v27l-34 18-34-18v-27zM206 105l34 18 34-18m-34 18v27m-17-54 34 18"/></g>
+<g font-family="Arial,sans-serif" font-size="12" fill="#6b9589"><text x="70" y="77">DATA</text><text x="352" y="77">TOOLS</text></g>
+<path d="M390 180v12m-6-6h12M83 182v8m-4-4h8" stroke="#7eaa9d" stroke-width="1.5"/>
+</svg>
