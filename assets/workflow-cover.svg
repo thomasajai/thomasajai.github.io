@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="290" viewBox="0 0 480 290">
-<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#b8a2ed" opacity=".4"/></pattern><filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#6541a4" flood-opacity=".12"/></filter></defs>
+<defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a5bfb0" opacity=".4"/></pattern><filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#315147" flood-opacity=".12"/></filter></defs>
 <rect width="480" height="290" fill="url(#dots)"/>
-<path d="M55 144h50m128 0h40m128 0h25M337 183v40a12 12 0 0 1-12 12H181a12 12 0 0 1-12-12v-40" fill="none" stroke="#ab91d7" stroke-width="2"/>
-<path d="m269 139 6 5-6 5m-105 38 5-6 5 6" fill="none" stroke="#8050c6" stroke-width="2"/>
-<circle cx="55" cy="144" r="6" fill="#b49adf"/><circle cx="426" cy="144" r="6" fill="#8050c6"/>
-<g filter="url(#shadow)"><rect x="105" y="96" width="128" height="96" rx="16" fill="#fff" stroke="#d9c8f1"/><rect x="273" y="96" width="128" height="96" rx="16" fill="#fff" stroke="#d9c8f1"/></g>
-<g fill="none" stroke="#8050c6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m159 115-8 8 8 8m20-16 8 8-8 8m-8-18-4 21"/><path d="m326 121 7 7 14-15"/></g>
-<g font-family="Arial,sans-serif" text-anchor="middle"><text x="169" y="166" font-size="17" fill="#44355c">Solver</text><text x="337" y="166" font-size="17" fill="#44355c">Verifier</text><rect x="204" y="221" width="98" height="28" rx="14" fill="#eee4fc"/><text x="253" y="240" font-size="12" fill="#8050c6">repair &amp; retry</text></g>
-<circle cx="251" cy="144" r="4" fill="#8050c6"/><circle cx="251" cy="144" r="9" fill="#8050c6" opacity=".1"/>
+<path d="M55 144h50m128 0h40m128 0h25M337 183v40a12 12 0 0 1-12 12H181a12 12 0 0 1-12-12v-40" fill="none" stroke="#91af9e" stroke-width="2"/>
+<path d="m269 139 6 5-6 5m-105 38 5-6 5 6" fill="none" stroke="#41675d" stroke-width="2"/>
+<circle cx="55" cy="144" r="6" fill="#a0bdab"/><circle cx="426" cy="144" r="6" fill="#41675d"/>
+<g filter="url(#shadow)"><rect x="105" y="96" width="128" height="96" rx="16" fill="#fff" stroke="#c6d8ca"/><rect x="273" y="96" width="128" height="96" rx="16" fill="#fff" stroke="#c6d8ca"/></g>
+<g fill="none" stroke="#41675d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m159 115-8 8 8 8m20-16 8 8-8 8m-8-18-4 21"/><path d="m326 121 7 7 14-15"/></g>
+<g font-family="Arial,sans-serif" text-anchor="middle"><text x="169" y="166" font-size="17" fill="#26312d">Solver</text><text x="337" y="166" font-size="17" fill="#26312d">Verifier</text><rect x="204" y="221" width="98" height="28" rx="14" fill="#e7eee5"/><text x="253" y="240" font-size="12" fill="#41675d">repair &amp; retry</text></g>
+<circle cx="251" cy="144" r="4" fill="#41675d"/><circle cx="251" cy="144" r="9" fill="#41675d" opacity=".1"/>
 </svg>
